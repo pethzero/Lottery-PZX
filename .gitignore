@@ -1,0 +1,53 @@
+# Node
+node_modules/
+pm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.env
+.env.local
+.env.*.local
+
+# Vite/React
+/react/dist
+/react/.vite
+/react/node_modules
+
+# Rust
+/rust/target
+**/*.rs.bk
+Cargo.lock
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Coverage
+coverage/
+
+# Build artifacts
+*.class
+*.exe
+*.dll
+*.so
+*.dylib
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite

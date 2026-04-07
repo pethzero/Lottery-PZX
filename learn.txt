@@ -1,0 +1,8 @@
+API Resource สำหรับแสดงผลการออกรางวัลสลากกินแบ่งรัฐบาล งวดล่าสุด
+https://gdcatalog.glo.or.th/th/dataset/dataset_c4-9_01/resource/0846af20-af93-498c-91d9-644a885733f7
+
+API Resource สำหรับการตรวจผลการออกรางวัลสลากกินแบ่งรัฐบาล ตามวันที่ออกสลากกินแบ่งรัฐบาล
+https://gdcatalog.glo.or.th/th/dataset/dataset_c4-9_01/resource/a4d750a4-f8a0-41f3-b62f-99ad97cd680a
+
+API Resource สำหรับแสดงผลการออกรางวัลสลากกินแบ่งรัฐบาล ตามวันที่ออกสลากกินแบ่งรัฐบาล
+https://gdcatalog.glo.or.th/th/dataset/dataset_c4-9_01/resource/64b39af8-fd9a-4eab-87d4-9193768c3812
