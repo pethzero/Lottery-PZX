@@ -6,3 +6,97 @@ https://gdcatalog.glo.or.th/th/dataset/dataset_c4-9_01/resource/a4d750a4-f8a0-41
 
 API Resource สำหรับแสดงผลการออกรางวัลสลากกินแบ่งรัฐบาล ตามวันที่ออกสลากกินแบ่งรัฐบาล
 https://gdcatalog.glo.or.th/th/dataset/dataset_c4-9_01/resource/64b39af8-fd9a-4eab-87d4-9193768c3812
+
+
+
+launch.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Rust Backend",
+      "type": "shell",
+      "command": "cargo run",
+      "options": {
+        "cwd": "${workspaceFolder}/rust"
+      },
+      "isBackground": true,
+      "problemMatcher": ["$rustc"],
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Start React Frontend",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/react"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Start All",
+      "dependsOn": ["Start Rust Backend", "Start React Frontend"],
+      "dependsOrder": "parallel",   // ✅ แก้ตรงนี้
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
+
+tasks.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Rust Backend",
+      "type": "shell",
+      "command": "cargo run",
+      "options": {
+        "cwd": "${workspaceFolder}/rust"
+      },
+      "isBackground": true,
+      "problemMatcher": ["$rustc"],
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Start React Frontend",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/react"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Start All",
+      "dependsOn": ["Start Rust Backend", "Start React Frontend"],
+      "dependsOrder": "parallel",   // ✅ แก้ตรงนี้
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
